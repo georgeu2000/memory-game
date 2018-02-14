@@ -1,0 +1,13 @@
+development:
+  clients:
+    default:
+      database: memory_game_development
+      hosts:
+       - 127.0.0.1:27017
+
+test:
+  clients:
+    default:
+      database: memory_game_test
+      hosts:
+       - 127.0.0.1:27017
