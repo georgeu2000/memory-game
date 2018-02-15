@@ -1,11 +1,14 @@
 <div id='board'>
   <% @deck.cards.each.with_index do | card,i | %>
-    <div id='card-<%= i %>' class='card' data-suit='<%= card.suit %>' data-value='<%= card.value %>' >
-      <%= i %>
+    <% red = 'red' if %w/ ♥ ♦ /.include?( card.suit ) %>
+    <div id='card-<%= i %>' class='card <%= red %>' data-suit='<%= card.suit %>' data-value='<%= card.value %>' >
     </div>
   <% end %>
 
   <br class="clear" />
 </div>
 
+<div id='matches'>
+  <div id='count'>0</div><div id='text'>Matches</div><br>
+</div>
 

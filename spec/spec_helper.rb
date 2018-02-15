@@ -13,8 +13,8 @@ require 'selenium/webdriver'
 require './spec/support/integration_helpers'
 
 
-Capybara.register_driver :chrome do |appl|
-  Capybara::Selenium::Driver.new(app, browser: :chrome )
+Capybara.register_driver :selenium do |app|
+  Capybara::Selenium::Driver.new(app, :browser => :chrome)
 end
 Capybara.asset_host = "http://localhost:3000"
 
