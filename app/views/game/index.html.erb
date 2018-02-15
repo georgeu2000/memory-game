@@ -1,1 +1,11 @@
-Memory Game
+<div id='board'>
+  <% @deck.cards.each.with_index do | card,i | %>
+    <div id='card-<%= i %>' class='card' data-suit='<%= card.suit %>' data-value='<%= card.value %>' >
+      <%= i %>
+    </div>
+  <% end %>
+
+  <br class="clear" />
+</div>
+
+

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Memory Game</title>
+    
+
+    <link rel="stylesheet" media="all" href="/assets/application.self-05ae0d26cc3b93138d1b9a1778c1d71b6197ce7bd2707a9d1eef5158fa5fbb1b.css?body=1" data-turbolinks-track="reload" />
+    <script src="/assets/jquery3.self-06c43429d1047ce3f355da574d8a9750209971b8b1b8f264f91f5518c5fcc060.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/popper.self-b5d0395dd499f58f910fee32e5221f71c3b8e6f3229879a7b76d481c5446de10.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap.self-caa553aa02de69210205232e653f3ed1142f1fdca642375ae6b26a891d3eaacd.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/rails-ujs.self-817d9a8cb641f7125060cb18fefada3f35339170767c4e003105f92d4c204e39.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/action_cable.self-69fddfcddf4fdef9828648f9330d6ce108b93b82b0b8d3affffc59a114853451.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/cable.self-8484513823f404ed0c0f039f75243bfdede7af7919dda65f2e66391252443ce9.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/game.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/application.self-d9c1df0d36a69bf8167ebb20070284ed3c5f931e7f6efe185b0936aad00629a6.js?body=1" data-turbolinks-track="reload"></script>
+    
+  </head>
+
+  <body>
+    <h3>Memory Game</h3>
+
+<div id='board'>
+    <div id='card-1' class='card' >
+      1
+    </div>
+    <div id='card-2' class='card' >
+      2
+    </div>
+    <div id='card-3' class='card' >
+      3
+    </div>
+    <div id='card-4' class='card' >
+      4
+    </div>
+    <div id='card-5' class='card' >
+      5
+    </div>
+    <div id='card-6' class='card' >
+      6
+    </div>
+    <div id='card-7' class='card' >
+      7
+    </div>
+    <div id='card-8' class='card' >
+      8
+    </div>
+    <div id='card-9' class='card' >
+      9
+    </div>
+    <div id='card-10' class='card' >
+      10
+    </div>
+    <div id='card-11' class='card' >
+      11
+    </div>
+    <div id='card-12' class='card' >
+      12
+    </div>
+    <div id='card-13' class='card' >
+      13
+    </div>
+    <div id='card-14' class='card' >
+      14
+    </div>
+    <div id='card-15' class='card' >
+      15
+    </div>
+    <div id='card-16' class='card' >
+      16
+    </div>
+    <div id='card-17' class='card' >
+      17
+    </div>
+    <div id='card-18' class='card' >
+      18
+    </div>
+    <div id='card-19' class='card' >
+      19
+    </div>
+    <div id='card-20' class='card' >
+      20
+    </div>
+    <div id='card-21' class='card' >
+      21
+    </div>
+    <div id='card-22' class='card' >
+      22
+    </div>
+    <div id='card-23' class='card' >
+      23
+    </div>
+    <div id='card-24' class='card' >
+      24
+    </div>
+    <div id='card-25' class='card' >
+      25
+    </div>
+    <div id='card-26' class='card' >
+      26
+    </div>
+    <div id='card-27' class='card' >
+      27
+    </div>
+    <div id='card-28' class='card' >
+      28
+    </div>
+    <div id='card-29' class='card' >
+      29
+    </div>
+    <div id='card-30' class='card' >
+      30
+    </div>
+    <div id='card-31' class='card' >
+      31
+    </div>
+    <div id='card-32' class='card' >
+      32
+    </div>
+    <div id='card-33' class='card' >
+      33
+    </div>
+    <div id='card-34' class='card' >
+      34
+    </div>
+    <div id='card-35' class='card' >
+      35
+    </div>
+    <div id='card-36' class='card' >
+      36
+    </div>
+    <div id='card-37' class='card' >
+      37
+    </div>
+    <div id='card-38' class='card' >
+      38
+    </div>
+    <div id='card-39' class='card' >
+      39
+    </div>
+    <div id='card-40' class='card' >
+      40
+    </div>
+    <div id='card-41' class='card' >
+      41
+    </div>
+    <div id='card-42' class='card' >
+      42
+    </div>
+    <div id='card-43' class='card' >
+      43
+    </div>
+    <div id='card-44' class='card' >
+      44
+    </div>
+    <div id='card-45' class='card' >
+      45
+    </div>
+    <div id='card-46' class='card' >
+      46
+    </div>
+    <div id='card-47' class='card' >
+      47
+    </div>
+    <div id='card-48' class='card' >
+      48
+    </div>
+    <div id='card-49' class='card' >
+      49
+    </div>
+    <div id='card-50' class='card' >
+      50
+    </div>
+    <div id='card-51' class='card' >
+      51
+    </div>
+    <div id='card-52' class='card' >
+      52
+    </div>
+</div>
+
+
+
+  </body>
+</html>

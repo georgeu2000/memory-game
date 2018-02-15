@@ -9,9 +9,14 @@ require 'capybara'
 require 'selenium/webdriver'
 
 
+# Helpers
+require './spec/support/integration_helpers'
+
+
 Capybara.register_driver :chrome do |appl|
-  Capybara::Selenium::Driver.new(appl, browser: :chrome )
+  Capybara::Selenium::Driver.new(app, browser: :chrome )
 end
+Capybara.asset_host = "http://localhost:3000"
 
 Mongoid.logger.level = Logger::ERROR
 
@@ -45,6 +50,4 @@ RSpec.configure do |config|
   end
 end
 
-def app
-  Capybara.app
-end
+
