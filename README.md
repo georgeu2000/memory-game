@@ -1,3 +1,7 @@
+# To run specs:
+
+`rspec`
+
 # Engineering Homework Assignment - Memory
 The purpose of this exercise is to get a gauge of how you work, build, and communicate through your code in the context of a project with features and requirements. 
 
